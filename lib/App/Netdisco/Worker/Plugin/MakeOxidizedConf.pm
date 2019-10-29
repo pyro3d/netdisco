@@ -20,7 +20,7 @@ register_worker({ phase => 'main' }, sub {
     my $default_group = $config->{default_group} || 'default';
     my $down_age  = $config->{down_age} || '1 day';
     my $delimiter = $config->{'text'}->{'delimiter'} || ';';
-    my $om = $config->{'output'} || 'none';
+    my $om = $config->{'output'} || 'text';
 
     my @devices = schema('netdisco')->resultset('Device')->search({},
       {
