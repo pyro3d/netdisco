@@ -11,7 +11,6 @@ use aliased 'App::Netdisco::Worker::Status';
 
 use Path::Class;
 use List::Util qw/pairkeys pairfirst/;
-use File::Slurper qw/read_lines write_text/;
 use App::Netdisco::Util::Permission 'check_acl_no';
 
 
