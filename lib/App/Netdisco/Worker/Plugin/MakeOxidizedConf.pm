@@ -73,7 +73,7 @@ register_worker({ phase => 'main' }, sub {
     foreach my $device (@devices) {
         my $model = $device->model;
         if (check_acl_no($device, $config->{excluded})) {
-          print " skipping $device: device excluded from export\n";
+          debug " skipping $device: device excluded from export\n";
           next
         }
         my ($group) =
