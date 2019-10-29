@@ -405,6 +405,7 @@ worker_plugins:
   - 'Macsuck::WirelessNodes'
   - 'Macwalk'
   - 'MakeRancidConf'
+  - 'MakeOxidizedConf'
   - 'NodeMonitor'
   - 'Nbtstat'
   - 'Nbtstat::Core'
